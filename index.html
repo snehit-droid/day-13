@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+    
+    <script>
+        var container = document.createElement('div');
+        container.id='container';
+
+        var calculator = document.createElement('div');
+        calculator.id='calculator';
+
+        var result = document.createElement('div');
+        result.id='result';
+
+        var history = document.createElement('div');
+        history.id='history';
+
+        var output = document.createElement('div');
+        output.id='output';
+
+        var history_value = document.createElement('div');
+        history_value.id='history-value';
+
+        var output_value = document.createElement('div');
+        output_value.id='output-value';
+
+        
+
+        
+
+        var keyboard = document.createElement('div');
+        keyboard.id='keyboard';
+
+        var clear = document.createElement('button');
+        clear.id='clear';
+        clear.classList.add('operator');
+        clear.innerHTML = "C";
+
+        var backspace = document.createElement('button');
+        backspace.id='backspace';
+        backspace.classList.add('operator');
+        backspace.innerHTML = "CE";
+
+        var modulo = document.createElement('button');
+        modulo.id='%';
+        modulo.classList.add('operator');
+        modulo.innerHTML = "%";
+
+        var divid = document.createElement('button');
+        divid.id='/';
+        divid.classList.add('operator');
+        divid.innerHTML = "&#247;";
+
+        var seven = document.createElement('button');
+        seven.id='7';
+        seven.classList.add('number');
+        seven.innerHTML = "7";
+
+        var eight = document.createElement('button');
+        eight.id='8';
+        eight.classList.add('number');
+        eight.innerHTML = "8";
+
+        var nine = document.createElement('button');
+        nine.id='9';
+        nine.classList.add('number');
+        nine.innerHTML = "9";
+
+        var multiply = document.createElement('button');
+        multiply.id='*';
+        multiply.classList.add('operator');
+        multiply.innerHTML = "&times;";
+
+        var four = document.createElement('button');
+        four.id='4';
+        four.classList.add('number');
+        four.innerHTML = "4";
+
+        var five = document.createElement('button');
+        five.id='5';
+        five.classList.add('number');
+        five.innerHTML = "5";
+
+        var six = document.createElement('button');
+        six.id='6';
+        six.classList.add('number');
+        six.innerHTML = "6";
+
+        var sub = document.createElement('button');
+        sub.id='-';
+        sub.classList.add('operator');
+        sub.innerHTML = "-";
+
+        var one = document.createElement('button');
+        one.id='1';
+        one.classList.add('number');
+        one.innerHTML = "1";
+
+        var two = document.createElement('button');
+        two.id='2';
+        two.classList.add('number');
+        two.innerHTML = "2";
+
+        var three = document.createElement('button');
+        three.id='3';
+        three.classList.add('number');
+        three.innerHTML = "3";
+
+        var add = document.createElement('button');
+        add.id='+';
+        add.classList.add('operator');
+        add.innerHTML = "+";
+
+        var empty = document.createElement('button');
+        empty.id='empty';
+        empty.classList.add('empty');
+        empty.innerHTML = "";
+
+        var zero = document.createElement('button');
+        zero.id='0';
+        zero.classList.add('number');
+        zero.innerHTML = "0";
+
+        var empty1 = document.createElement('button');
+        empty1.id='empty';
+        empty1.classList.add('empty');
+        empty1.innerHTML = "";
+
+        var equal = document.createElement('button');
+        equal.id='=';
+        equal.classList.add('operator');
+        equal.innerHTML = "=";
+
+        keyboard.append(clear,backspace,modulo,divid,seven,eight,nine,multiply,four,five,six,sub,one,two,three,add,empty,zero,empty1,equal);
+
+        
+        
+        calculator.append(result,keyboard);
+
+
+        container.appendChild(calculator);
+    </script>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
